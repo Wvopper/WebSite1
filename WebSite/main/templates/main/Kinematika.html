@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+{{ title }}
+{% endblock %}
+<link rel="stylesheet" href="{% static 'main/css/Kinematika.css'%}">
+
+{% block content %}
+<h1>Выбирите раздел:</h1>
+<div class="categories">
+    <ul>
+        <li><p>Равномерное прямолинейное движение(РПД)</p></li>
+    </ul>
+</div>
+{% endblock %}

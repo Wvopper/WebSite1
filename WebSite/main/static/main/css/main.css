@@ -1,0 +1,15 @@
+body {
+    background: #f1f1f1;
+}
+
+.description {
+    text-align: center
+}
+
+h1 {
+    position: relative; left: 370px;
+}
+
+.title {
+    text-align: center
+}

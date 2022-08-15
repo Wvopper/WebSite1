@@ -6,6 +6,6 @@ h1 {
     text-align: center;
 }
 
-div{
-    position: relative; left: 370px;
+p {
+    position: absolute; right: 50px;
 }

@@ -7,9 +7,13 @@ body {
 }
 
 h1 {
-    position: relative; left: 370px;
+    text-align: centre;
 }
 
 .title {
-    text-align: center
+    text-align: center;
+}
+
+.fs-4 {
+    position: relative; bottom: 100px
 }

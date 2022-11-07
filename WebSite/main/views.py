@@ -5,11 +5,7 @@ def index(request):
     data = {
         'title': 'The main page of the site'    
             }
-    return render(request, 'main/index.html', data)
-
-
-def about(request):
-    return render(request, 'main/about.html')
+    return render(request, 'main/temp_2_copy.html', data)
 
 
 def Knematika(request):
@@ -17,3 +13,9 @@ def Knematika(request):
         'title': 'Разделы кинематики'
             }
     return render(request, 'main/Kinematika.html', data)
+
+# def main(request):
+#     data = {
+#         'title': 'Tets page'
+#     }
+#     return render(request, 'main/temp_2_copy.html')

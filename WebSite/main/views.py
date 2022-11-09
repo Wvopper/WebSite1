@@ -14,6 +14,7 @@ def Knematika(request):
             }
     return render(request, 'main/Kinematika.html', data)
 
+
 # def main(request):
 #     data = {
 #         'title': 'Tets page'

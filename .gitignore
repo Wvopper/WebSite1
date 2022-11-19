@@ -1,2 +1,4 @@
-cuts.txt
 Themes.html
+\__pycache__
+/venv/
+/PHWeb.proto/

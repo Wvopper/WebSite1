@@ -2,7 +2,8 @@
 
 
 <!DOCTYPE html>
-<html style="font-size: 16px;" lang="ru"><head>
+<html style="font-size: 16px;" lang="ru">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="PHWeb.com​, Добро пожаловать, Разделы​">
@@ -12,8 +13,6 @@
     <script class="u-script" src="{% static 'main/js/nicepage.js' %}" defer=""></script>
     <title>{% block title %}{% endblock %}  </title>
     <link rel="stylesheet" href="{% static 'main/css/nicepage.css' %}" media="screen">
-<!--    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>-->
-<!--    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>-->
     <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
@@ -23,15 +22,14 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/106226.png"
-}</script>
+		"logo": "images/106226.png"}</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Главная">
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-4a6b"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="{% url 'homepage' %}" class="u-image u-logo u-image-1" data-image-width="512" data-image-height="512">
-          <img src="images/106226.png" class="u-logo-image u-logo-image-1">
+          <img src="{% static 'main/img/106226.png' %}" class="u-logo-image u-logo-image-1">
         </a>
         <h1 class="u-text u-text-default u-title u-text-1">
           <span style="font-weight: 700;">PHWeb.com </span>
@@ -77,7 +75,7 @@
           <div class="u-repeater u-repeater-1">
             <div class="u-align-left u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img class="u-expanded-width u-image u-image-default u-image-1" alt="" data-image-width="2048" data-image-height="1443" src="images/slide193.jpg">
+                <img class="u-expanded-width u-image u-image-default u-image-1" alt="" data-image-width="2048" data-image-height="1443" src="{% static 'main/img/slide193.jpg' %}">
                 <h4 class="u-text u-text-2">Кинематика<br>
                 </h4>
                 <p class="u-text u-text-3">Данный блок посвящён таким темам как РПД, ПРУД, Движение по окружности и др.</p>
@@ -85,21 +83,21 @@
             </div>
             <div class="u-align-left u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img class="u-expanded-width u-image u-image-default u-image-2" alt="" data-image-width="912" data-image-height="443" src="images/image.png">
+                <img class="u-expanded-width u-image u-image-default u-image-2" alt="" data-image-width="912" data-image-height="443" src="{% static 'main/img/image.png' %}">
                 <h4 class="u-text u-text-4">Динамика. Статика</h4>
                 <p class="u-text u-text-5">Данный блок посвящён таким темам как Динамика, Статика, Законы сохранения.</p>
               </div>
             </div>
             <div class="u-align-left u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img class="u-expanded-width u-image u-image-default u-image-3" alt="" data-image-width="470" data-image-height="700" src="images/katushka-tesla-tt-solid-state-plus-85-sm-s-toroidom.jpg">
+                <img class="u-expanded-width u-image u-image-default u-image-3" alt="" data-image-width="470" data-image-height="700" src="{% static 'main/img/katushka-tesla-tt-solid-state-plus-85-sm-s-toroidom.jpg' %}">
                 <h4 class="u-text u-text-6">Электричество и Магнетизм</h4>
                 <p class="u-text u-text-7">Данный блок посвящён Электричеству, Электродинамике и Магнитным явлениям</p>
               </div>
             </div>
             <div class="u-align-left u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-4">
-                <img class="u-expanded-width u-image u-image-default u-image-4" alt="" data-image-width="3508" data-image-height="2480" src="images/fullsize.jpg">
+                <img class="u-expanded-width u-image u-image-default u-image-4" alt="" data-image-width="3508" data-image-height="2480" src="{% static 'main/img/fullsize.jpg' %}">
                 <h4 class="u-text u-text-8">Термодинамика и МКТ</h4>
                 <p class="u-text u-text-9">Данный блок посвящён Термодинамике и МКТ, а также Атомной физике</p>
               </div>
@@ -137,16 +135,5 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-363b"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">При поддержке МАОУ "Лицей-интернат №7" и Казанского лицея</p>
       </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
   
 </body></html>

@@ -2,3 +2,40 @@ Themes.html
 \__pycache__
 /venv/
 /PHWeb.proto/
+
+
+
+
+
+
+*****
+n = int(input())
+
+
+def Insort(a):
+    for i in range(1, len(a)):
+        ind = i
+        while ind > 0 and a[ind] < a[ind - 1]:
+            a[ind], a[ind - 1] = a[ind - 1], a[ind]
+            ind -= 1
+    return a
+
+
+def SSort(arr):
+    for i in range(len(arr) - 1):
+        ind = i
+        for j in range(i + 1, len(arr)):
+            if arr[j] < arr[ind]:
+                ind = j
+        arr[i], arr[ind] = arr[ind], arr[i]
+    return arr
+
+
+def BbSort(ar):
+    for i in range(len(ar) - 1):
+        for j in range(0, len(ar) - i - 1):
+            if ar[j + 1] < ar[j]:
+                ar[j + 1], ar[j] = ar[j], ar[j + 1]
+
+    return ar
+*****

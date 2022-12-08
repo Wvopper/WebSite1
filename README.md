@@ -1,6 +1,6 @@
 # PhWEB
 (WebSite1)
-![](G:\Users\AYUGaliev\Desktop\ \django logo.png)
+
 Training project on django.
 ***
 This site will be dedicated for preparation for physics lessons. The site is on the development

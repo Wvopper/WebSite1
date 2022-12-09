@@ -1,14 +1,17 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="ru"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="PHWeb.com​, Сайт разработан на платформе&nbsp;https://nicepage.com/ и фреймворке Django.Git репозиторий сайта:&nbsp;https://github.com/Wvopper/WebSite1.git&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kazan. 2022">
+<!--    <meta name="keywords" content="PHWeb.com​, Сайт разработан на платформе&nbsp;https://nicepage.com/ и фреймворке Django.Git репозиторий сайта:&nbsp;https://github.com/Wvopper/WebSite1.git&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Kazan. 2022">-->
     <meta name="description" content="">
     <title>О нас</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="О-нас.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="{% static 'main/css/nicepage.css' %}" media="screen">
+<link rel="stylesheet" href="{% static 'main/css/О-нас.css' %}" media="screen">
+    <script class="u-script" type="text/javascript" src="{% static 'main/js/jquery.js' %}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{% static 'main/js/nicepage.js' %}" defer=""></script>
     <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
@@ -24,8 +27,8 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-4a6b"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="512" data-image-height="512">
-          <img src="images/106226.png" class="u-logo-image u-logo-image-1">
+        <a href="{% url 'homepage' %}" class="u-image u-logo u-image-1" data-image-width="512" data-image-height="512">
+          <img src="{% static 'main/img/106226.png' %}" class="u-logo-image u-logo-image-1">
         </a>
         <h1 class="u-text u-text-default u-title u-text-1">
           <span style="font-weight: 700;">PHWeb.com </span>
@@ -39,16 +42,16 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="Главная.html" style="padding: 10px;">Главная</a>
-</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="О-нас.html" style="padding: 10px;">О нас</a>
+            <ul class="u-nav u-spacing-20 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'homepage' %}" style="padding: 10px;">Главная</a>
+</li><li class="u-nav-item"><a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-palette-1-base u-text-grey-90 u-text-hover-palette-2-base" href="{% url 'aboutpage' %}" style="padding: 10px;">О нас</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
             <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Главная.html">Главная</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="О-нас.html">О нас</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'homepage' %}">Главная</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="{% url 'aboutpage' %}">О нас</a>
 </li></ul>
               </div>
             </div>
@@ -58,8 +61,8 @@
       </div></header>
     <section class="u-clearfix u-section-1" id="sec-d8d9">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-text u-text-default u-text-1">Сайт разработан на платформе&nbsp;https://nicepage.com/ и фреймворке Django.<br>
-          <br>Git репозиторий сайта:&nbsp;https://github.com/Wvopper/WebSite1.git<br>
+        <h2 class="u-text u-text-default u-text-1">Сайт разработан на платформе&nbsp; <a>https://nicepage.com/</a> и фреймворке Django.<br>
+            <br>Git репозиторий сайта:&nbsp;<a>https://github.com/Wvopper/WebSite1.git</a><br>
           <br>
           <br>
           <br>
@@ -73,16 +76,5 @@
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-363b"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">При поддержке МАОУ "Лицей-интернат №7" и Казанского лицея</p>
       </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section>
   
 </body></html>

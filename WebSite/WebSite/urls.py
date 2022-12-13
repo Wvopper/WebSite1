@@ -25,3 +25,4 @@ urlpatterns = [
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = "WebSite.views.handler_not_found"
+handler500 = "WebSite.views.handler_server_error"

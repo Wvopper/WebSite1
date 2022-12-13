@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect
 
 
-
 def index(request):
     data = {
-        'title': 'The main page of the site'
-            }
+        'title': 'PHWeb.com. Добро пожаловать'
+    }
     return render(request, 'main/main.html', data)
 
 
@@ -20,5 +19,5 @@ def about(request):
 def Kinematika(request):
     data = {
         'title': 'Разделы кинематики'
-            }
+    }
     return render(request, 'main/Kinematika.html', data)

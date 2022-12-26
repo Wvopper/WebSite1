@@ -3,10 +3,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed:100,200,300,400" rel="stylesheet">
 <link rel="stylesheet" href="{% static 'main/css/500.css' %}">
+<link rel="icon" type="image/x-icon" href="{% static 'main/img/icon.ico' %}">
 <script src="{% static 'main/js/500.js' %}" defer=""></script>
 <body class="loading">
   <h1>500</h1>
   <h2>Unexpected server Error <b>:(</b></h2>
+  <h2><a href="{% url 'homepage' %}"> Go back to home page </a></h2>
   <div class="gears">
     <div class="gear one">
       <div class="bar"></div>

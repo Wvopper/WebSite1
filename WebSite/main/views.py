@@ -12,10 +12,6 @@ def about(request):
     return render(request, 'main/About.html')
 
 
-# def not_found(request, exception):
-#     return render(request, 'main/404.html')
-
-
 def Kinematika(request):
     data = {
         'title': 'Разделы кинематики'
